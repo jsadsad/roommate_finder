@@ -1,0 +1,3 @@
+class RoomScrapper
+
+end
