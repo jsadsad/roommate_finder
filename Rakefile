@@ -11,8 +11,8 @@ end
 task :scrape_rooms do
   #instantiate a scraper and then have it find new rooms
   east_bay_scraper = RoomScraper.new('https://sfbay.craigslist.org/search/eby/roo')
-  # east_bay_scraper.call
-  # south_bay_scraper = RoomScraper.new('https://sfbay.craigslist.org/search/sby/roo?').update_rooms
-  # south_bay_scraper.call
+  east_bay_scraper.call
+  south_bay_scraper = RoomScraper.new('https://sfbay.craigslist.org/search/sby/roo?')
+  south_bay_scraper.call
   #after this method call, I SHOULD be able to say Room.all and have rooms there
 end
